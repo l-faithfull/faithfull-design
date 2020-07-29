@@ -1,0 +1,159 @@
+/* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+
+/* GRID */
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1200px;
+}
+
+.half-width {
+    float: left;
+    width: 600px;
+}
+
+.third-width {
+    float: left;
+    padding-bottom: 120px;
+    text-align: center;
+    width: 400px;
+}
+
+
+/* HEADER */
+#header {
+    background: url('../img/dream.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    padding: 65px 0 65px 25px;
+}
+
+#header h1 { 
+    clear: both;
+    color: #ffff00;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    padding: 75px 25px;
+}
+
+#header h2 { 
+    clear: both;
+    color: #ffff00;
+    font-size: 40px;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    padding: 75px 25px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ffff00;
+    font-size: 20px;
+    padding-left: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* ABOUT */
+#about .full-width { 
+    padding: 80px 0;
+}
+
+#about {
+    background-color: #87bff7;
+    background-size: cover;
+}
+
+#about h3 {
+    color: #ffff00;
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about img {
+    width: 600px;
+}
+
+#about p {
+    box-sizing: border-box;
+    line-height: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+/* PORTFOLIO */
+#portfolio h3 {
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#portfolio .project {
+    margin: 60px auto;
+    overflow: auto;
+}
+
+#portfolio img {
+    border: 1px solid #b7b7b7;
+    box-sizing: border-box;
+    clear: both;
+    width: 600px;
+}
+
+#portfolio p {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 30px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+#portfolio a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* CONTACT */
+#contact {
+    background: #3399ff;
+}
+
+#contact h3 {
+    color: #ffff00;
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h4 {
+    color: #ffff00;
+    padding: 10px 0;
+}
+
+#contact a {
+    color: black;
+    text-decoration: none;
+}
+
+#contact .full-width p {
+    clear: both;
+    text-align: center;
+}
