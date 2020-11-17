@@ -1,38 +1,61 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
     
     <head>
         <meta charset="utf-8">
         <title>Faithfull Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- CSS links -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
+        
+        <!-- Google font links -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <meta name="theme-color" content="#fafafa">
     </head>
     
     <body>
-        <section id="header">
-            <div class="full-width">
-                
-                <div class="half-width">
+        <main>
+    
+            <header> 
+                <div class="content-wrapper">
                     <h1>Faithfull Design</h1>
-                </div>
-
-                <div class="half-width">
+                    <!-- <div class="header-divider"></div> -->
                     <nav>
                         <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
                         </ul>
-                    </nav>
-                </div>
+                    </nav>  <!-- nav wrapper -->
                 
-                <h2>Forging forwards with web development</h2>
-            </div>
-        </section>    
-
-        <section id="about">
-            <div class="full-width">
+                    <h2>Forging forwards with web development</h2>
+                </div>  <!-- content-wrapper ends -->
+            </header> <!-- header wrapper -->
+            
+        <section id="about">  <!-- ABOUT SECTION -->
+            <div class="content-wrapper">
                 <h3>A little bit about me</h3>
                 <div class="half-width">
                     <h4>I'm passionate about coding.</h4>
@@ -42,88 +65,110 @@
                 <div class="half-width"> 
                     <img src="img/me.jpg" alt="me"/>
                 </div>
-            </div>
-        </section>    
+            </div>  <!-- About content wrapper -->
+        </section>    <!-- About section wrapper -->
 
-        <section id="portfolio">
-            <div class="full-width">
-            <h3>My Portfolio</h3>
+        <section id="portfolio">  <!-- PORTFOLOIO SECTION -->
+            <div class="content-wrapper">
+                <h3>My Portfolio</h3>
                 
                 <div class="project"> <!-- Clinic website -->
-                    <div class="image half-width">    
+                    <div class="image-content">    
                         <a href="http://communityosteopaths.co.uk" target="_blank"><img src="img/comm-ost.png" alt="Community Osteopaths Website"/></a>    
                     </div>
-                    <div class="description half-width">
+                    <div class="description-content">
                         <p><a href="http://communityosteopaths.co.uk" target="_blank">Community Osteopaths Website</a><br>
                         HTML5 &amp; CSS Website</p>
                         <p>Unable to trade during Covid-19 lockdown, my clinic - Community Osteopaths - needed a new, updated website to convey the necessary protocols for safe practice.  This website reflects the feel of our clinic: informative, reassuring and calming.</p>
                     </div>
-                </div>
+                </div>  <!-- Clinic website wrapper -->
                 
                 <div class="project"> <!-- Vision board project -->
-                    <div class="image half-width"> 
+                    <div class="image-content"> 
                         <img src="img/vision-board.png" alt="Vision Board"/>    
                     </div>
-                    <div class="description half-width">
+                    <div class="description-content">
                         <p><strong>Vision Board Exercise</strong><br>
                         HTML &amp; CSS</p>
                         <p>Learning to code through Skillcrush, they gave us a number of HTML and CSS exercises to hone our skills.  This was one of them.</p>
                     </div>
-                </div>
+                </div>  <!-- Vision board wrapper -->
                 
                 <div class="project"> <!-- Recipe project -->
-                    <div class="image half-width"> 
+                    <div class="image-content"> 
                         <img src="img/recipe.png" alt="Recipe Exercise"/>
                     </div>
-                    <div class="description half-width">
+                    <div class="description-content">
                         <p><strong>Recipe Collection Exercise</strong><br>
                         HTML5 &amp; CSS</p>
                         <p>Practicing these new computer languages is like learning anatomy, logical.</p>
                     </div>
-                </div>
+                </div> <!-- Recipe wrapper -->
                 
                 <div class="project"> <!-- Rogue Pickings Project -->
-                    <div class="image half-width"> 
+                    <div class="image-content"> 
                         <img src="img/rogue-pickings.png" alt="Rogue Project"/>
                     </div>
-                    <div class="description half-width">
+                    <div class="description-content">
                         <p><strong>Rogue Pickings Exercise</strong><br>
                         HTML &amp; CSS from Photoshop Design Comp</p>
                         <p>Working from a Design Comp is like studying a patient's movements... attention to detail is everything.</p>
                     </div>
-                </div>
+                </div>  <!-- Rogue wrapper -->
                 
                 <div class="project"> <!-- Jubilee Austen Project -->
-                    <div class="image half-width"> 
+                    <div class="image-content"> 
                         <img src="img/jubilee.png" alt="Jubilee Project"/>
                     </div>
-                    <div class="description half-width">
+                    <div class="description-content">
                         <p><strong>Jubilee Austen Exercise</strong></p>
                         <p>This was the first Skillcrush projects.  Managing all the HTML &amp; CSS information was like filtering through a patient's possible diagnosis: ordering one's thoughts and filtering through the irrelevant.</p>
                     </div>
-                </div>
-            </div>
-        </section>    
+                </div>  <!-- Jubilee wrapper -->
+            
+            </div>  <!-- Content wrapper -->
+        </section>    <!-- Portfolio wrapper -->
 
         <section id="contact">
-            <div class="full-width">
+            <div class="content-wrapper">
                 <h3>Let's Connect</h3>
+                
                 <div class="third-width">
                     <h4>Drop me a line</h4> <!-- Source the envelope icon -->
-                    <a href="mailto:hello@faithfulldesign.com">hello@faithfulldesign.com</a> 
+                    <address>
+                        <a href="mailto:hello@faithfulldesign.com">hello@faithfulldesign.com</a> 
+                    </address>
                 </div>
+                
                 <div class="third-width">
                     <h4>Follow me</h4>
                     <!-- GitHub icon -->
-                    <a href="https://github.com/l-faithfull" target="_blank"><img src="img/github.png" alt="GitHub"/></a>
+                    <a href="https://github.com/l-faithfull" target="_blank">
+                        <img src="img/github.png" alt="GitHub"/>
+                    </a>
                 </div>
+
                 <div class="third-width">
                     <h4>Meet me</h4>
                     <p>Edinburgh, Scotland</p>
                 </div>
-            <p>Copyright 2020 | Faithfull Design</p>
-            </div>
-        </section>    
+                
+                <p>Copyright 2020 | Faithfull Design</p>
+            
+            </div>  <!-- Content wrapper -->
+        </section>    <!-- Contact wrapper -->
+
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    
     </body>
 
 </html>
