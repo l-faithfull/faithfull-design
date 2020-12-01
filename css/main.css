@@ -95,13 +95,28 @@ html {
   font-size: 16px;
 }
 
-/* BODY */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   display: flex;
   justify-content: center;
 	align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #ffff00;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -116,16 +131,8 @@ img {
 width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: #ffff00;
-}
-
-a {
-  color: black;
-  text-decoration: none;
+address {
+  font-style: normal;
 }
 
 header,
@@ -161,7 +168,7 @@ header h1 {
 }
 
 header h2 { 
-  font-size: 40px;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -186,7 +193,6 @@ nav ul {
 
 nav ul li {
   font-size: 1.125em;
-  padding: 30px 25px 0 25px;
   text-transform: uppercase;
 }
 
@@ -203,49 +209,37 @@ nav ul li a {
   background-size: cover;
 }
 
-#about h3 {
-  font-size: 40px;
-  padding: 50px 0;
-  text-align: center;
+#about article {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 75%; 
+  padding: 20px 0;
 }
 
-#about img {
-  width: 50%;
+#about .description-content,
+#about .image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
-#about p {
-  box-sizing: border-box;
-  line-height: 30px;
-  padding-right: 30px;
-  text-align: justify;
-}
 
 /*======================================== 
  PORTFOLIO - MOBILE
 ==========================================*/
-#portfolio h3 {
-  font-size: 40px;
-  padding: 50px 0;
-  text-align: center;
+#portfolio .project .description-content,
+#portfolio .project .image-content {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
 }
 
-#portfolio .project {
-  margin: 60px auto;
-  overflow: auto;
-}
-
-#portfolio img {
+#portfolio .project .image-content {
   border: 1px solid #b7b7b7;
-  box-sizing: border-box;
-  width: 600px;
-}
-
-#portfolio p {
-  box-sizing: border-box;
-  display: inline-block;
-  line-height: 30px;
-  padding-left: 30px;
-  text-align: justify;
 }
 
 #portfolio a {
@@ -257,23 +251,16 @@ nav ul li a {
  CONTACT - MOBILE
 ============================================== */
 #contact {
-    background: #3399ff;
+  background: #3399ff;
 }
 
-#contact h3 {
-  font-size: 40px;
-  padding: 50px 0;
-  text-align: center;
+#contact article {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
 }
-
-#contact h4 {
-  padding: 10px 0;
-}
-
-#contact .full-width p {
-  text-align: center;
-}
-
 
 /* ==========================================================================
    Helper classes
