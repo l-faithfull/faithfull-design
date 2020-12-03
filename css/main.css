@@ -112,6 +112,11 @@ h4 {
 
 h3 {
   font-size: 1.5em;
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 1.125em;
 }
 
 a {
@@ -119,16 +124,17 @@ a {
   text-decoration: none;
 }
 
-.content-wrapper {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 img {
-width: 100%;
+  width: 100%;
 }
 
 address {
@@ -145,6 +151,27 @@ header,
   flex-flow: row wrap;
 }
 
+.content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.description-content,
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.image-content {
+  width: 75%;
+  border: 1px solid #b7b7b7;
+}
+
 
 /*======================================== 
  HEADER - MOBILE
@@ -153,6 +180,7 @@ header {
   background: url('../img/dream.jpg');
   background-position: center;
   background-size: cover;
+  min-height: 350px;
 }
 
 header .content-wrapper {
@@ -164,12 +192,20 @@ header h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0;
-  padding: 75px 25px;
+  padding: 30px 25px 0px 25px;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: #a3aab1;
 }
 
 header h2 { 
   font-size: 1.5em;
   text-align: center;
+  padding: 100px 0 50px 0;
 }
 
 /*------ nav bar -------- */
@@ -192,8 +228,8 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1.125em;
   text-transform: uppercase;
+  margin: 10px 15px;
 }
 
 nav ul li a {
@@ -217,30 +253,23 @@ nav ul li a {
   padding: 20px 0;
 }
 
-#about .description-content,
 #about .image-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+  margin-bottom: 50px;
 }
-
 
 /*======================================== 
  PORTFOLIO - MOBILE
 ==========================================*/
-#portfolio .project .description-content,
-#portfolio .project .image-content {
-  width: 49%;
-  display: flex;
+#portfolio .project {
+  display: flex; 
   justify-content: center;
   align-items: center;
-  flex-flow: row nowrap;
+  flex-flow: column wrap;
+  margin: 50px 0;
+  width: 75%;
 }
 
-#portfolio .project .image-content {
-  border: 1px solid #b7b7b7;
-}
+/* figure out how to make image-content bigger */
 
 #portfolio a {
   font-weight: bold;
@@ -255,11 +284,15 @@ nav ul li a {
 }
 
 #contact article {
-  width: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row nowrap;
+  flex-flow: column wrap;
+  margin-bottom: 50px;
+}
+
+#contact p {
+  margin: 50px 0;
 }
 
 /* ==========================================================================
