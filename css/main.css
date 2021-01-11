@@ -269,6 +269,10 @@ nav ul li a {
   width: 75%;
 }
 
+#portfolio .image-content {
+  width: 110%;
+}
+
 /* figure out how to make image-content bigger */
 
 #portfolio a {
@@ -416,6 +420,10 @@ nav ul li a {
   body {
     font-size: 1.125em;
   }
+
+  /* 1) make sure background colours fully cover their section 
+    2) refer to Comm Ost so project images & description can sit side-by-side  */
+
 
 } /* Tablet ends */
 
