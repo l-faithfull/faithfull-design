@@ -141,6 +141,13 @@ address {
   font-style: normal;
 }
 
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: #a3aab1;
+}
+
 header,
 #about,
 #portfolio,
@@ -193,13 +200,6 @@ header h1 {
   font-weight: bold;
   margin: 0;
   padding: 30px 25px 0px 25px;
-}
-
-.header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0;
-  background-color: #a3aab1;
 }
 
 header h2 { 
@@ -271,9 +271,8 @@ nav ul li a {
 
 #portfolio .image-content {
   width: 110%;
+  margin: 30px 0;
 }
-
-/* figure out how to make image-content bigger */
 
 #portfolio a {
   font-weight: bold;
@@ -424,6 +423,29 @@ nav ul li a {
   /* 1) make sure background colours fully cover their section 
     2) refer to Comm Ost so project images & description can sit side-by-side  */
 
+  /* ----------------------------- 
+      PORTFOLIO - TABLET 
+  ------------------------------- */
+  #portfolio .divider {
+    display: none;
+  }
+
+  #portfolio .project {
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  #portfolio .project .image-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  #portfolio .project .image-content {
+    margin-right: 20px;
+    width: 33%;
+  }
 
 } /* Tablet ends */
 
