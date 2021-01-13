@@ -98,9 +98,6 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  display: flex;
-  justify-content: center;
-	align-items: center;
 }
 
 h1,
@@ -191,6 +188,13 @@ header {
 }
 
 header .content-wrapper {
+  width: 100%;
+}
+
+header .title-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -270,8 +274,12 @@ nav ul li a {
 }
 
 #portfolio .image-content {
-  width: 110%;
+  width: 100%;
   margin: 30px 0;
+}
+
+#portfolio .title-container {
+  text-align: center;
 }
 
 #portfolio a {
@@ -413,23 +421,52 @@ nav ul li a {
   ===================================*/
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    padding: 100px 0;
   }
 
   body {
     font-size: 1.125em;
   }
 
-  /* 1) make sure background colours fully cover their section 
-    2) refer to Comm Ost so project images & description can sit side-by-side  */
+  /* =============================
+      HEADER - TABLET 
+  ================================ */
+  header .content-wrapper {
+    max-width: 100%;
+    justify-content: space-around;
+  }
 
-  /* ----------------------------- 
-      PORTFOLIO - TABLET 
-  ------------------------------- */
-  #portfolio .divider {
+  header .title-nav-container {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    padding: 0 50px;
+  }
+
+  header nav {
+    padding-right: 20px;
+    width: auto;
+  }
+
+  header nav ul li {
+    margin: 10px 20px;
+  }
+
+  header .divider {
     display: none;
   }
 
+  header h2 {
+    padding: 200px 0 0 0;
+  }
+
+ 
+  /* =============================
+      PORTFOLIO - TABLET 
+  ================================ */
   #portfolio .project {
     align-items: flex-start;
     flex-flow: row wrap;
@@ -461,6 +498,11 @@ nav ul li a {
     font-size: 1.25em;
     line-height: 1.5;
   }
+
+  /* =============================
+      PORTFOLIO - DESKTOP 
+  ================================ */
+
 
 } /* Desktop ends */
 
