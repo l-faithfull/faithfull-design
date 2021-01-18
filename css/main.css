@@ -474,17 +474,20 @@ nav ul li a {
   }
 
   nav {
+
     padding-right: 20px;
     width: auto;
   }
 
   nav ul li {
+
     margin: 10px 20px;
   }
 
   header .divider {
     display: none;
   }
+
 
   /* =============================
       PORTFOLIO - TABLET 
@@ -583,10 +586,6 @@ nav ul li a {
     width: 49%;
   }
 
-  /* =============================
-      CONTACT - DESKTOP 
-  ================================ */
- 
 } /* Desktop ends */
 
 
